@@ -6,7 +6,7 @@ from urllib.parse import quote
 # ============================================================
 
 # Chemin du dossier contenant tes photos 360
-DOSSIER = Path(r"../../photos360")
+DOSSIER = Path(r".")
 
 # Chemin du fichier JavaScript qui sera généré
 FICHIER_SORTIE = Path("photos360.js")
@@ -30,7 +30,12 @@ if not DOSSIER.is_dir():
 
 # Récupération des fichiers uniquement
 fichiers = sorted(
-    [f for f in DOSSIER.iterdir() if f.is_file()],
+    [
+        f for f in DOSSIER.iterdir()
+        if f.is_file()
+        and f.suffix.lower() != ".py"
+        and f.name != "photos360.js"
+    ],
     key=lambda f: f.name.lower()
 )
 
@@ -40,7 +45,7 @@ lignes = []
 
 lignes.append("window.popupPhotos360HTML =")
 lignes.append(
-    "    '<b class=\"titleb\">Photos 360</b><hr class=\"titlehr\">' +"
+    "    '<b class=\"titleb\">Photos 360°</b><hr class=\"titlehr\">' +"
 )
 
 lignes.append(
@@ -68,7 +73,7 @@ for fichier in fichiers:
     nom_url = quote(nom, safe="")
 
     lignes.append(
-        f"    '<li><a href=\"?file=../photos360/{nom_url}\">{nom}</a><a href=\"?file=../photos360/{nom_url}\">' +"
+        f"    '<li><a href=\"?file=../photos360/{nom_url}\">{nom}</a></li>' +"
     )
 
 
