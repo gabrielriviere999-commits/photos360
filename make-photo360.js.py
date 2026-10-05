@@ -6,7 +6,7 @@ from urllib.parse import quote
 # ============================================================
 
 # Chemin du dossier contenant tes photos 360
-DOSSIER = Path(r"/")
+DOSSIER = Path(r".")
 
 # Chemin du fichier JavaScript qui sera généré
 FICHIER_SORTIE = Path("photos360.js")
@@ -30,7 +30,12 @@ if not DOSSIER.is_dir():
 
 # Récupération des fichiers uniquement
 fichiers = sorted(
-    [f for f in DOSSIER.iterdir() if f.is_file()],
+    [
+        f for f in DOSSIER.iterdir()
+        if f.is_file()
+        and f.suffix.lower() != ".py"
+        and f.name != "photos360.js"
+    ],
     key=lambda f: f.name.lower()
 )
 
