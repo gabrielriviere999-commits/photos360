@@ -20,8 +20,7 @@ window.popupPhotos360HTML =
     '<li><a href="?file=../photos360/strose_port_20230930_113820.jpg">strose_port_20230930_113820.jpg</a></li>' +
     '<li><a href="?file=../photos360/vincendo_container_20240817_135505.jpg">vincendo_container_20240817_135505.jpg</a></li>' +
     '</ul>' +
-    '</div>' +
-    '<hr><button onclick="closePopup()">Fermer</button>';
+    '</div>';
 
 function sansAccents(str){return str
         .replace(/[àáâãäå]/g, "a")

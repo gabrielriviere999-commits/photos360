@@ -79,8 +79,7 @@ for fichier in fichiers:
 
 # Fin du JavaScript
 lignes.append("    '</ul>' +")
-lignes.append("    '</div>' +")
-lignes.append("    '<hr><button onclick=\"closePopup()\">Fermer</button>';")
+lignes.append("    '</div>';")
 
 lignes.append("")
 
