@@ -10,6 +10,10 @@ window.popupPhotos360HTML =
     '<li><a href="?file=../photos360/stjoseph_ancienne_usine_20260926_135034.jpg">stjoseph_ancienne_usine_20260926_135034.jpg</a></li>' +
     '<li><a href="?file=../photos360/stjoseph_jardin20decembre_20240706_122013.jpg">stjoseph_jardin20decembre_20240706_122013.jpg</a></li>' +
     '<li><a href="?file=../photos360/stphilippe_20250906_125201.jpg">stphilippe_20250906_125201.jpg</a></li>' +
+    '<li><a href="?file=../photos360/strose_anse_des_cascades_20230323_161054.jpg">strose_anse_des_cascades_20230323_161054.jpg</a></li>' +
+    '<li><a href="?file=../photos360/strose_anse_des_cascades_20230323_161705.jpg">strose_anse_des_cascades_20230323_161705.jpg</a></li>' +
+    '<li><a href="?file=../photos360/strose_anse_des_cascades_20230323_162145.jpg">strose_anse_des_cascades_20230323_162145.jpg</a></li>' +
+    '<li><a href="?file=../photos360/strose_anse_des_cascades_20230323_163422.jpg">strose_anse_des_cascades_20230323_163422.jpg</a></li>' +
     '<li><a href="?file=../photos360/strose_port_20230930_113820.jpg">strose_port_20230930_113820.jpg</a></li>' +
     '<li><a href="?file=../photos360/vincendo_container_20240817_135505.jpg">vincendo_container_20240817_135505.jpg</a></li>' +
     '</ul>' +
