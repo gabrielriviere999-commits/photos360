@@ -68,7 +68,7 @@ for fichier in fichiers:
     nom_url = quote(nom, safe="")
 
     lignes.append(
-        f"    '<li><a href=\"?file=../photos360/{nom_url}\">{nom}</a></li>' +"
+        f"    '<li><a href=\"?file=../photos360/{nom_url}\">{nom}</a><a href=\"?file=../photos360/{nom_url}\"> [↓] </a></li>' +"
     )
 
 
