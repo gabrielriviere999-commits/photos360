@@ -113,5 +113,3 @@ print("=" * 60)
 
 for fichier in fichiers:
     print(f"  - {fichier.name}")
-
-input("\nAppuie sur Entrée pour fermer...")
