@@ -1,31 +1,42 @@
-name: Générer photo360.js
+name: Générer photos360.js
 
 on:
-  workflow_dispatch:   # déclenchement manuel uniquement
+  workflow_dispatch:
 
 permissions:
-  contents: write      # nécessaire pour pouvoir pousser les changements
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Récupérer le repo
-        uses: actions/checkout@v3
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
 
       - name: Installer Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
-      - name: Exécuter le script Python
+      - name: Générer photos360.js
         run: python3 make-photo360.js.py
 
-      - name: Commit du fichier photo360.js généré
+      - name: Vérifier le fichier généré
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add photo360.js
-          git commit -m "Mise à jour manuelle de photo360.js" || echo "Aucun changement"
+          echo "Contenu du dossier :"
+          ls -la
+          echo ""
+          echo "Vérification de photos360.js :"
+          ls -l photos360.js
+
+      - name: Commit du fichier généré
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add photos360.js
+
+          git commit -m "Mise à jour de photos360.js" || echo "Aucun changement"
+
           git push
