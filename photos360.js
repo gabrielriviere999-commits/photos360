@@ -9,6 +9,7 @@ window.popupPhotos360HTML =
     '<li><a href="?file=../photos360/cryptomeria_lanouvelle_20231208_092010.jpg">cryptomeria_lanouvelle_20231208_092010.jpg</a></li>' +
     '<li><a href="?file=../photos360/grand_brule_20210430_120657.jpg">grand_brule_20210430_120657.jpg</a></li>' +
     '<li><a href="?file=../photos360/grand_brule_20221104_172848.jpg">grand_brule_20221104_172848.jpg</a></li>' +
+    '<li><a href="?file=../photos360/observatoire_des_makes_20230904_103401.jpg">observatoire_des_makes_20230904_103401.jpg</a></li>' +
     '<li><a href="?file=../photos360/ravine_blanche_20261004_131931.jpg">ravine_blanche_20261004_131931.jpg</a></li>' +
     '<li><a href="?file=../photos360/st_philippe_port_20221028_181030.jpg">st_philippe_port_20221028_181030.jpg</a></li>' +
     '<li><a href="?file=../photos360/stjoseph_ancienne_usine_20260926_135034.jpg">stjoseph_ancienne_usine_20260926_135034.jpg</a></li>' +
