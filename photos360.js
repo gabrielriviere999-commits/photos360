@@ -4,8 +4,7 @@ window.popupPhotos360HTML =
     '<div id="photos360List">' +
     '<ul>' +
     '</ul>' +
-    '</div>' +
-    '<hr><button onclick="closePopup()">Fermer</button>';
+    '</div>';
 
 function sansAccents(str){return str
         .replace(/[àáâãäå]/g, "a")
