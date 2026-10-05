@@ -1,7 +1,11 @@
 name: Générer photos360.js
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # Permet de toujours le lancer manuellement
+  push:
+    paths:
+      - '**/*.jpg'
+      - '**/*.jpeg' # Optionnel, au cas où des extensions diffèrent
 
 permissions:
   contents: write
@@ -34,9 +38,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
+          
           git add photos360.js
-
-          git commit -m "Mise à jour de photos360.js" || echo "Aucun changement"
-
+          
+          # Le "|| echo" évite que l'action ne plante s'il n'y a pas de nouvelle photo
+          git commit -m "Mise à jour automatique de photos360.js" || echo "Aucun changement"
+          
           git push
