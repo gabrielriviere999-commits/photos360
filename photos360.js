@@ -3,6 +3,8 @@ window.popupPhotos360HTML =
     '<input type="text" id="filterPhotos360" style="width:100%;box-sizing:border-box;" placeholder="Filtrer..." onkeyup="var f=sansAccents(this.value.toLowerCase());var a=document.getElementById(\'photos360List\').getElementsByTagName(\'a\');for(var i=0;i<a.length;i++)a[i].parentNode.style.display=sansAccents(a[i].textContent.toLowerCase()).indexOf(f)>=0?\'\':\'none\';">' +
     '<div id="photos360List">' +
     '<ul>' +
+    '<li><a href="?file=../photos360/camping_cilaos_20230210_061857.jpg">camping_cilaos_20230210_061857.jpg</a></li>' +
+    '<li><a href="?file=../photos360/camping_cilaos_20230210_091203.jpg">camping_cilaos_20230210_091203.jpg</a></li>' +
     '<li><a href="?file=../photos360/grand_brule_20210430_120657.jpg">grand_brule_20210430_120657.jpg</a></li>' +
     '<li><a href="?file=../photos360/grand_brule_20221104_172848.jpg">grand_brule_20221104_172848.jpg</a></li>' +
     '<li><a href="?file=../photos360/ravine_blanche_20261004_131931.jpg">ravine_blanche_20261004_131931.jpg</a></li>' +
