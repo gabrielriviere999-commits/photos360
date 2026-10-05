@@ -5,6 +5,8 @@ window.popupPhotos360HTML =
     '<ul>' +
     '<li><a href="?file=../photos360/camping_cilaos_20230210_061857.jpg">camping_cilaos_20230210_061857.jpg</a></li>' +
     '<li><a href="?file=../photos360/camping_cilaos_20230210_091203.jpg">camping_cilaos_20230210_091203.jpg</a></li>' +
+    '<li><a href="?file=../photos360/cryptomeria_lanouvelle_20231207_153847.jpg">cryptomeria_lanouvelle_20231207_153847.jpg</a></li>' +
+    '<li><a href="?file=../photos360/cryptomeria_lanouvelle_20231208_092010.jpg">cryptomeria_lanouvelle_20231208_092010.jpg</a></li>' +
     '<li><a href="?file=../photos360/grand_brule_20210430_120657.jpg">grand_brule_20210430_120657.jpg</a></li>' +
     '<li><a href="?file=../photos360/grand_brule_20221104_172848.jpg">grand_brule_20221104_172848.jpg</a></li>' +
     '<li><a href="?file=../photos360/ravine_blanche_20261004_131931.jpg">ravine_blanche_20261004_131931.jpg</a></li>' +
