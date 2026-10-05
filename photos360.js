@@ -7,6 +7,7 @@ window.popupPhotos360HTML =
     '<li><a href="?file=../photos360/grand_brule_20221104_172848.jpg">grand_brule_20221104_172848.jpg</a></li>' +
     '<li><a href="?file=../photos360/st_philippe_port_20221028_181030.jpg">st_philippe_port_20221028_181030.jpg</a></li>' +
     '<li><a href="?file=../photos360/stjoseph_ancienne_usine_20260926_135034.jpg">stjoseph_ancienne_usine_20260926_135034.jpg</a></li>' +
+    '<li><a href="?file=../photos360/strose_port_20230930_113820.jpg">strose_port_20230930_113820.jpg</a></li>' +
     '</ul>' +
     '</div>' +
     '<hr><button onclick="closePopup()">Fermer</button>';
