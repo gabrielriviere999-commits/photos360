@@ -85,6 +85,7 @@ lignes.append("")
 
 # Fonction sansAccents
 lignes.append("function sansAccents(str){return str")
+lignes.append('        .replace(/[_]/g, " ")')
 lignes.append('        .replace(/[àáâãäå]/g, "a")')
 lignes.append('        .replace(/[ç]/g, "c")')
 lignes.append('        .replace(/[èéêë]/g, "e")')
