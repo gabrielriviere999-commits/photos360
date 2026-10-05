@@ -5,6 +5,7 @@ window.popupPhotos360HTML =
     '<ul>' +
     '<li><a href="?file=../photos360/grand_brule_20210430_120657.jpg">grand_brule_20210430_120657.jpg</a></li>' +
     '<li><a href="?file=../photos360/grand_brule_20221104_172848.jpg">grand_brule_20221104_172848.jpg</a></li>' +
+    '<li><a href="?file=../photos360/ravine_blanche_20261004_131931.jpg">ravine_blanche_20261004_131931.jpg</a></li>' +
     '<li><a href="?file=../photos360/st_philippe_port_20221028_181030.jpg">st_philippe_port_20221028_181030.jpg</a></li>' +
     '<li><a href="?file=../photos360/stjoseph_ancienne_usine_20260926_135034.jpg">stjoseph_ancienne_usine_20260926_135034.jpg</a></li>' +
     '<li><a href="?file=../photos360/stjoseph_jardin20decembre_20240706_122013.jpg">stjoseph_jardin20decembre_20240706_122013.jpg</a></li>' +
