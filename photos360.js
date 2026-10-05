@@ -1,5 +1,5 @@
 window.popupPhotos360HTML =
-    '<b class="titleb">Photos 360</b><hr class="titlehr">' +
+    '<b class="titleb">Photos 360°</b><hr class="titlehr">' +
     '<input type="text" id="filterPhotos360" style="width:100%;box-sizing:border-box;" placeholder="Filtrer..." onkeyup="var f=sansAccents(this.value.toLowerCase());var a=document.getElementById(\'photos360List\').getElementsByTagName(\'a\');for(var i=0;i<a.length;i++)a[i].parentNode.style.display=sansAccents(a[i].textContent.toLowerCase()).indexOf(f)>=0?\'\':\'none\';">' +
     '<div id="photos360List">' +
     '<ul>' +

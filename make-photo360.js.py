@@ -45,7 +45,7 @@ lignes = []
 
 lignes.append("window.popupPhotos360HTML =")
 lignes.append(
-    "    '<b class=\"titleb\">Photos 360</b><hr class=\"titlehr\">' +"
+    "    '<b class=\"titleb\">Photos 360°</b><hr class=\"titlehr\">' +"
 )
 
 lignes.append(
