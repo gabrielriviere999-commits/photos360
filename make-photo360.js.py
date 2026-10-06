@@ -1,22 +1,12 @@
 from pathlib import Path
 from urllib.parse import quote
 
-# ============================================================
 # CONFIGURATION
-# ============================================================
-
-# Chemin du dossier contenant tes photos 360
 DOSSIER = Path(r".")
-
-# Chemin du fichier JavaScript qui sera généré
 FICHIER_SORTIE = Path("photos360.js")
 
 
-# ============================================================
 # GÉNÉRATION
-# ============================================================
-
-# Vérification du dossier
 if not DOSSIER.exists():
     print(f"ERREUR : le dossier n'existe pas : {DOSSIER}")
     input("Appuie sur Entrée pour fermer...")
@@ -40,7 +30,7 @@ fichiers = sorted(
 )
 
 
-# Début du JavaScript
+# DÉBUT DU JAVASCRIPT
 lignes = []
 
 lignes.append("window.popupPhotos360HTML =")
@@ -48,42 +38,48 @@ lignes.append(
     "    '<b class=\"titleb\">Photos 360°</b><hr class=\"titlehr\">' +"
 )
 
+# Filtre
 lignes.append(
     "    '<input type=\"text\" id=\"filterPhotos360\" "
     "style=\"width:100%;box-sizing:border-box;\" "
     "placeholder=\"Filtrer...\" "
     "onkeyup=\"var f=sansAccents(this.value.toLowerCase());"
-    "var a=document.getElementById(\\'photos360List\\').getElementsByTagName(\\'a\\');"
-    "for(var i=0;i<a.length;i++)"
-    "a[i].parentNode.style.display="
-    "sansAccents(a[i].textContent.toLowerCase()).indexOf(f)>=0?\\'\\':\\'none\\';\">' +"
+    "var li=document.getElementById(\\'photos360List\\').getElementsByTagName(\\'li\\');"
+    "for(var i=0;i<li.length;i++){"
+    "var a=li[i].getElementsByClassName(\\'photo360Nom\\')[0];"
+    "li[i].style.display="
+    "sansAccents(a.textContent.toLowerCase()).indexOf(f)>=0?\\'\\':\\'none\\';"
+    "}\">' +"
 )
 
 lignes.append("    '<div id=\"photos360List\">' +")
 lignes.append("    '<ul>' +")
 
 
-# Ajout des fichiers
+# AJOUT DES FICHIERS
 for fichier in fichiers:
+
     nom = fichier.name
 
-    # Encodage pour une URL :
-    # espace -> %20
-    # accents et caractères spéciaux -> encodés correctement
+    # Encodage URL
     nom_url = quote(nom, safe="")
 
     lignes.append(
-        f"    '<li><a href=\"?file=../photos360/{nom_url}\">{nom}</a><a href=\"../photos360/{nom_url}\"download> [↓]</a></li>' +"
+        f"    '<li>"
+        f"<a class=\"photo360Nom\" href=\"?file=../photos360/{nom_url}\">{nom}</a>"
+        f"<a href=\"../photos360/{nom_url}\" download> [↓]</a>"
+        f"</li>' +"
     )
 
 
-# Fin du JavaScript
+# FIN DU JAVASCRIPT
 lignes.append("    '</ul>' +")
 lignes.append("    '</div>';")
 
 lignes.append("")
 
-# Fonction sansAccents
+
+# FONCTION SANS ACCENTS
 lignes.append("function sansAccents(str){return str")
 lignes.append('        .replace(/[_]/g, " ")')
 lignes.append('        .replace(/[àáâãäå]/g, "a")')
@@ -97,17 +93,14 @@ lignes.append('        .replace(/[ýÿ]/g, "y");')
 lignes.append("}")
 
 
-# Écriture du fichier
+# ÉCRITURE DU FICHIER
 FICHIER_SORTIE.write_text(
     "\n".join(lignes),
     encoding="utf-8"
 )
 
 
-# ============================================================
 # INFORMATIONS
-# ============================================================
-
 print("=" * 60)
 print("GÉNÉRATION TERMINÉE")
 print("=" * 60)
