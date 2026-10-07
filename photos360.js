@@ -45,11 +45,6 @@ window.popupPhotos360HTML =
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/stjoseph_jardin20decembre_20240706_122013.jpg">stjoseph_jardin20decembre_20240706_122013.jpg</a><a href="../photos360/stjoseph_jardin20decembre_20240706_122013.jpg" download> [↓]</a></li>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/stjoseph_manapany_20230709_161124.jpg">stjoseph_manapany_20230709_161124.jpg</a><a href="../photos360/stjoseph_manapany_20230709_161124.jpg" download> [↓]</a></li>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/stphilippe_20250906_125201.jpg">stphilippe_20250906_125201.jpg</a><a href="../photos360/stphilippe_20250906_125201.jpg" download> [↓]</a></li>' +
-    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/strose_anse_des_cascades_20230323_161054.jpg">strose_anse_des_cascades_20230323_161054.jpg</a><a href="../photos360/strose_anse_des_cascades_20230323_161054.jpg" download> [↓]</a></li>' +
-    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/strose_anse_des_cascades_20230323_161705.jpg">strose_anse_des_cascades_20230323_161705.jpg</a><a href="../photos360/strose_anse_des_cascades_20230323_161705.jpg" download> [↓]</a></li>' +
-    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/strose_anse_des_cascades_20230323_162145.jpg">strose_anse_des_cascades_20230323_162145.jpg</a><a href="../photos360/strose_anse_des_cascades_20230323_162145.jpg" download> [↓]</a></li>' +
-    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/strose_anse_des_cascades_20230323_163422.jpg">strose_anse_des_cascades_20230323_163422.jpg</a><a href="../photos360/strose_anse_des_cascades_20230323_163422.jpg" download> [↓]</a></li>' +
-    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/strose_port_20230930_113820.jpg">strose_port_20230930_113820.jpg</a><a href="../photos360/strose_port_20230930_113820.jpg" download> [↓]</a></li>' +
     '</div>';
 
 function togglePhotos360Dossier(el){
