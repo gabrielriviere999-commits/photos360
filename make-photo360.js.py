@@ -265,20 +265,6 @@ lignes.append("        }")
 lignes.append("    }")
 lignes.append("}")
 
-# FONCTION SANS ACCENTS
-lignes.append("")
-lignes.append("function sansAccents(str){return str")
-lignes.append('        .replace(/[_]/g, " ")')
-lignes.append('        .replace(/[àáâãäå]/g, "a")')
-lignes.append('        .replace(/[ç]/g, "c")')
-lignes.append('        .replace(/[èéêë]/g, "e")')
-lignes.append('        .replace(/[ìíîï]/g, "i")')
-lignes.append('        .replace(/[ñ]/g, "n")')
-lignes.append('        .replace(/[òóôõö]/g, "o")')
-lignes.append('        .replace(/[ùúûü]/g, "u")')
-lignes.append('        .replace(/[ýÿ]/g, "y");')
-lignes.append("}")
-
 
 # ÉCRITURE DU FICHIER
 FICHIER_SORTIE.write_text(
