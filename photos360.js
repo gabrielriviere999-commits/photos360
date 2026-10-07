@@ -38,12 +38,6 @@ window.popupPhotos360HTML =
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/cryptomeria_la_nouvelle_20231208_092010.jpg">cryptomeria_la_nouvelle_20231208_092010.jpg</a><a href="../photos360/cryptomeria_la_nouvelle_20231208_092010.jpg" download> [↓]</a></li>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/grand_brule_20210430_120657.jpg">grand_brule_20210430_120657.jpg</a><a href="../photos360/grand_brule_20210430_120657.jpg" download> [↓]</a></li>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/grand_brule_20221104_172848.jpg">grand_brule_20221104_172848.jpg</a><a href="../photos360/grand_brule_20221104_172848.jpg" download> [↓]</a></li>' +
-    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/observatoire_des_makes_20230904_103401.jpg">observatoire_des_makes_20230904_103401.jpg</a><a href="../photos360/observatoire_des_makes_20230904_103401.jpg" download> [↓]</a></li>' +
-    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/ravine_blanche_20261004_131931.jpg">ravine_blanche_20261004_131931.jpg</a><a href="../photos360/ravine_blanche_20261004_131931.jpg" download> [↓]</a></li>' +
-    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/st_philippe_port_20221028_181030.jpg">st_philippe_port_20221028_181030.jpg</a><a href="../photos360/st_philippe_port_20221028_181030.jpg" download> [↓]</a></li>' +
-    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/stjoseph_ancienne_usine_20260926_135034.jpg">stjoseph_ancienne_usine_20260926_135034.jpg</a><a href="../photos360/stjoseph_ancienne_usine_20260926_135034.jpg" download> [↓]</a></li>' +
-    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/stjoseph_jardin20decembre_20240706_122013.jpg">stjoseph_jardin20decembre_20240706_122013.jpg</a><a href="../photos360/stjoseph_jardin20decembre_20240706_122013.jpg" download> [↓]</a></li>' +
-    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/stjoseph_manapany_20230709_161124.jpg">stjoseph_manapany_20230709_161124.jpg</a><a href="../photos360/stjoseph_manapany_20230709_161124.jpg" download> [↓]</a></li>' +
     '</div>';
 
 function togglePhotos360Dossier(el){
