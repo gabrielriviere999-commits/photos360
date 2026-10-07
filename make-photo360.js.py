@@ -208,37 +208,40 @@ lignes.append("function filtrerPhotos360(texte){")
 lignes.append("    texte=sansAccents(texte.toLowerCase());")
 lignes.append("    var racine=document.getElementById('photos360List');")
 lignes.append("    if(!racine)return;")
-lignes.append("    var dossiers=racine.getElementsByClassName('photo360Dossier');")
 lignes.append("    var fichiers=racine.getElementsByClassName('photo360Fichier');")
-
-# FICHIERS
+lignes.append("    var dossiers=racine.getElementsByClassName('photo360Dossier');")
 lignes.append("    var i,j;")
+
+
+# RECHERCHE UNIQUEMENT DANS LES FICHIERS
 lignes.append("    for(i=0;i<fichiers.length;i++){")
-lignes.append("        var lien=fichiers[i].getElementsByClassName('photo360Nom')[0];")
-lignes.append("        var nom=sansAccents(lien.textContent.toLowerCase());")
 lignes.append(
-    "        fichiers[i].style.display="
-    "nom.indexOf(texte)>=0?'':'none';"
+    "        var lien=fichiers[i].getElementsByClassName("
+    "'photo360Nom')[0];"
 )
+lignes.append("        var nom=sansAccents(lien.textContent.toLowerCase());")
+lignes.append("        if(texte==='' || nom.indexOf(texte)>=0){")
+lignes.append("            fichiers[i].style.display='';")
+lignes.append("        }else{")
+lignes.append("            fichiers[i].style.display='none';")
+lignes.append("        }")
 lignes.append("    }")
 
-# DOSSIERS
-lignes.append("    for(i=0;i<dossiers.length;i++){")
+
+# AFFICHAGE DES DOSSIERS
+# Un dossier est visible uniquement s'il contient
+# au moins un fichier correspondant à la recherche.
+# On parcourt les dossiers de bas en haut afin que
+# les dossiers parents puissent détecter les résultats
+# présents dans leurs sous-dossiers.
+lignes.append("    for(i=dossiers.length-1;i>=0;i--){")
 lignes.append("        var dossier=dossiers[i];")
-lignes.append(
-    "        var nomDossier="
-    "sansAccents(dossier.getElementsByClassName("
-    "'photo360DossierNom')[0].textContent.toLowerCase());"
-)
 lignes.append("        var contenu=dossier.nextSibling;")
 lignes.append("        var visible=false;")
 
-# LE NOM DU DOSSIER CORRESPOND
-lignes.append("        if(texte==='' || nomDossier.indexOf(texte)>=0){")
-lignes.append("            visible=true;")
-lignes.append("        }")
-# CHERCHER UN FICHIER VISIBLE DANS LE DOSSIER
-lignes.append("        if(!visible && contenu){")
+
+# RECHERCHE DES FICHIERS CORRESPONDANTS
+lignes.append("        if(contenu){")
 lignes.append("            var enfants=contenu.getElementsByTagName('li');")
 lignes.append("            for(j=0;j<enfants.length;j++){")
 lignes.append("                if(enfants[j].style.display!=='none'){")
@@ -248,19 +251,19 @@ lignes.append("                }")
 lignes.append("            }")
 lignes.append("        }")
 
-# AFFICHAGE
+# AFFICHAGE / MASQUAGE DU DOSSIER
 lignes.append("        dossier.style.display=visible?'':'none';")
-lignes.append("        if(texte!=='' && visible && contenu){")
+lignes.append("        if(visible && contenu){")
 lignes.append("            contenu.style.display='';")
 lignes.append(
-        "            var bouton=dossier.getElementsByClassName("
-        "'photo360Toggle')[0];"
+    "            var bouton=dossier.getElementsByClassName("
+    "'photo360Toggle')[0];"
 )
+
 lignes.append("            if(bouton)bouton.innerHTML='▾';")
 lignes.append("        }")
 lignes.append("    }")
 lignes.append("}")
-
 
 # FONCTION SANS ACCENTS
 lignes.append("")
@@ -274,7 +277,6 @@ lignes.append('        .replace(/[ñ]/g, "n")')
 lignes.append('        .replace(/[òóôõö]/g, "o")')
 lignes.append('        .replace(/[ùúûü]/g, "u")')
 lignes.append('        .replace(/[ýÿ]/g, "y");')
-
 lignes.append("}")
 
 
