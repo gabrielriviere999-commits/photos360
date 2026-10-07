@@ -32,12 +32,10 @@ window.popupPhotos360HTML =
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/minecraft/maison_flottante_20261006.png">maison_flottante_20261006.png</a><a href="../photos360/minecraft/maison_flottante_20261006.png" download> [↓]</a></li>' +
     '</ul>' +
     '</div>' +
-    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/camping_cilaos_20230210_061857.jpg">camping_cilaos_20230210_061857.jpg</a><a href="../photos360/camping_cilaos_20230210_061857.jpg" download> [↓]</a></li>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/camping_cilaos_20230210_091203.jpg">camping_cilaos_20230210_091203.jpg</a><a href="../photos360/camping_cilaos_20230210_091203.jpg" download> [↓]</a></li>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/cryptomeria_la_nouvelle_20231207_153847.jpg">cryptomeria_la_nouvelle_20231207_153847.jpg</a><a href="../photos360/cryptomeria_la_nouvelle_20231207_153847.jpg" download> [↓]</a></li>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/cryptomeria_la_nouvelle_20231208_092010.jpg">cryptomeria_la_nouvelle_20231208_092010.jpg</a><a href="../photos360/cryptomeria_la_nouvelle_20231208_092010.jpg" download> [↓]</a></li>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/grand_brule_20210430_120657.jpg">grand_brule_20210430_120657.jpg</a><a href="../photos360/grand_brule_20210430_120657.jpg" download> [↓]</a></li>' +
-    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/grand_brule_20221104_172848.jpg">grand_brule_20221104_172848.jpg</a><a href="../photos360/grand_brule_20221104_172848.jpg" download> [↓]</a></li>' +
     '</div>';
 
 function togglePhotos360Dossier(el){
