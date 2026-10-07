@@ -130,9 +130,7 @@ def generer_html(elements, profondeur=0):
                 "</div>' +"
             )
 
-            lignes.append(
-                "    '<div class=\"photo360DossierContenu\">' +"
-            )
+            lignes.append("    '<div class=\"photo360DossierContenu\">' +")
 
             lignes.append("    '<ul>' +")
 
@@ -188,7 +186,6 @@ lignes.append("    '</div>';")
 
 
 # JAVASCRIPT : OUVERTURE / FERMETURE DES DOSSIERS
-lignes.append("")
 lignes.append("function togglePhotos360Dossier(el){")
 lignes.append("    var contenu=el.parentNode.nextSibling;")
 lignes.append("    if(!contenu)return;")
@@ -203,7 +200,6 @@ lignes.append("}")
 
 
 # JAVASCRIPT : FILTRE
-lignes.append("")
 lignes.append("function filtrerPhotos360(texte){")
 lignes.append("    texte=sansAccents(texte.toLowerCase());")
 lignes.append("    var racine=document.getElementById('photos360List');")
