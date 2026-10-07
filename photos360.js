@@ -50,23 +50,23 @@ function filtrerPhotos360(texte){
     texte=sansAccents(texte.toLowerCase());
     var racine=document.getElementById('photos360List');
     if(!racine)return;
-    var dossiers=racine.getElementsByClassName('photo360Dossier');
     var fichiers=racine.getElementsByClassName('photo360Fichier');
+    var dossiers=racine.getElementsByClassName('photo360Dossier');
     var i,j;
     for(i=0;i<fichiers.length;i++){
         var lien=fichiers[i].getElementsByClassName('photo360Nom')[0];
         var nom=sansAccents(lien.textContent.toLowerCase());
-        fichiers[i].style.display=nom.indexOf(texte)>=0?'':'none';
+        if(texte==='' || nom.indexOf(texte)>=0){
+            fichiers[i].style.display='';
+        }else{
+            fichiers[i].style.display='none';
+        }
     }
-    for(i=0;i<dossiers.length;i++){
+    for(i=dossiers.length-1;i>=0;i--){
         var dossier=dossiers[i];
-        var nomDossier=sansAccents(dossier.getElementsByClassName('photo360DossierNom')[0].textContent.toLowerCase());
         var contenu=dossier.nextSibling;
         var visible=false;
-        if(texte==='' || nomDossier.indexOf(texte)>=0){
-            visible=true;
-        }
-        if(!visible && contenu){
+        if(contenu){
             var enfants=contenu.getElementsByTagName('li');
             for(j=0;j<enfants.length;j++){
                 if(enfants[j].style.display!=='none'){
@@ -76,7 +76,7 @@ function filtrerPhotos360(texte){
             }
         }
         dossier.style.display=visible?'':'none';
-        if(texte!=='' && visible && contenu){
+        if(visible && contenu){
             contenu.style.display='';
             var bouton=dossier.getElementsByClassName('photo360Toggle')[0];
             if(bouton)bouton.innerHTML='▾';
