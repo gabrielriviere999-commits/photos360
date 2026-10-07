@@ -5,7 +5,8 @@ on:
   push:
     paths:
       - '**/*.jpg'
-      - '**/*.jpeg' # Optionnel, au cas où des extensions diffèrent
+      - '**/*.jpeg'
+      - '**/*.png'
 
 permissions:
   contents: write
