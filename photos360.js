@@ -44,7 +44,6 @@ window.popupPhotos360HTML =
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/stjoseph_ancienne_usine_20260926_135034.jpg">stjoseph_ancienne_usine_20260926_135034.jpg</a><a href="../photos360/stjoseph_ancienne_usine_20260926_135034.jpg" download> [↓]</a></li>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/stjoseph_jardin20decembre_20240706_122013.jpg">stjoseph_jardin20decembre_20240706_122013.jpg</a><a href="../photos360/stjoseph_jardin20decembre_20240706_122013.jpg" download> [↓]</a></li>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/stjoseph_manapany_20230709_161124.jpg">stjoseph_manapany_20230709_161124.jpg</a><a href="../photos360/stjoseph_manapany_20230709_161124.jpg" download> [↓]</a></li>' +
-    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/stphilippe_20250906_125201.jpg">stphilippe_20250906_125201.jpg</a><a href="../photos360/stphilippe_20250906_125201.jpg" download> [↓]</a></li>' +
     '</div>';
 
 function togglePhotos360Dossier(el){
