@@ -36,7 +36,6 @@ window.popupPhotos360HTML =
     '<ul>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/minecraft/monde_06102026/maison_flottante_20261006.png">maison_flottante_20261006.png</a><a href="../photos360/minecraft/monde_06102026/maison_flottante_20261006.png" download> [↓]</a></li>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/minecraft/monde_06102026/mine_20261007_143500.png">mine_20261007_143500.png</a><a href="../photos360/minecraft/monde_06102026/mine_20261007_143500.png" download> [↓]</a></li>' +
-    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/minecraft/monde_06102026/mine_20261007_150000.png">mine_20261007_150000.png</a><a href="../photos360/minecraft/monde_06102026/mine_20261007_150000.png" download> [↓]</a></li>' +
     '</ul>' +
     '</div>' +
     '</ul>' +
