@@ -28,6 +28,19 @@ window.popupPhotos360HTML =
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/la_reunion/vincendo_container_20240817_135505.jpg">vincendo_container_20240817_135505.jpg</a><a href="../photos360/la_reunion/vincendo_container_20240817_135505.jpg" download> [↓]</a></li>' +
     '</ul>' +
     '</div>' +
+    '<div class="photo360Dossier"><span class="photo360Toggle" onclick="togglePhotos360Dossier(this)">▾</span><span class="photo360DossierNom">minecraft</span></div>' +
+    '<div class="photo360DossierContenu">' +
+    '<ul>' +
+    '<div class="photo360Dossier"><span class="photo360Toggle" onclick="togglePhotos360Dossier(this)">▾</span><span class="photo360DossierNom">monde_06102026</span></div>' +
+    '<div class="photo360DossierContenu">' +
+    '<ul>' +
+    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/minecraft/monde_06102026/maison_flottante_20261006.png">maison_flottante_20261006.png</a><a href="../photos360/minecraft/monde_06102026/maison_flottante_20261006.png" download> [↓]</a></li>' +
+    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/minecraft/monde_06102026/mine_20261007_143500.png">mine_20261007_143500.png</a><a href="../photos360/minecraft/monde_06102026/mine_20261007_143500.png" download> [↓]</a></li>' +
+    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/minecraft/monde_06102026/mine_20261007_150000.png">mine_20261007_150000.png</a><a href="../photos360/minecraft/monde_06102026/mine_20261007_150000.png" download> [↓]</a></li>' +
+    '</ul>' +
+    '</div>' +
+    '</ul>' +
+    '</div>' +
     '</div>';
 function togglePhotos360Dossier(el){
     var contenu=el.parentNode.nextSibling;
