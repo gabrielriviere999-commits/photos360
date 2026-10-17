@@ -45,6 +45,7 @@ window.popupPhotos360HTML =
     '<div class="photo360DossierContenu">' +
     '<ul>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/minecraft/monde_20261017villagemanoir/monde_20261017villagemanoir.png">monde_20261017villagemanoir.png</a><a href="../photos360/minecraft/monde_20261017villagemanoir/monde_20261017villagemanoir.png" download> [↓]</a></li>' +
+    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/minecraft/monde_20261017villagemanoir/villagemanoir_20261017.png">villagemanoir_20261017.png</a><a href="../photos360/minecraft/monde_20261017villagemanoir/villagemanoir_20261017.png" download> [↓]</a></li>' +
     '</ul>' +
     '</div>' +
     '</ul>' +
