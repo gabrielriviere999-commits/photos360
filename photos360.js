@@ -41,6 +41,12 @@ window.popupPhotos360HTML =
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/minecraft/monde_20261006/nether_20261014.png">nether_20261014.png</a><a href="../photos360/minecraft/monde_20261006/nether_20261014.png" download> [↓]</a></li>' +
     '</ul>' +
     '</div>' +
+    '<div class="photo360Dossier"><span class="photo360Toggle" onclick="togglePhotos360Dossier(this)">▾</span><span class="photo360DossierNom">monde_20261017villagemanoir</span></div>' +
+    '<div class="photo360DossierContenu">' +
+    '<ul>' +
+    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/minecraft/monde_20261017villagemanoir/monde_20261017villagemanoir.png">monde_20261017villagemanoir.png</a><a href="../photos360/minecraft/monde_20261017villagemanoir/monde_20261017villagemanoir.png" download> [↓]</a></li>' +
+    '</ul>' +
+    '</div>' +
     '</ul>' +
     '</div>' +
     '</div>';
