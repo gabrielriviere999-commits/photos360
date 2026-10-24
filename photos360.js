@@ -35,7 +35,6 @@ window.popupPhotos360HTML =
     '<div class="photo360DossierContenu">' +
     '<ul>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/minecraft/monde_20261006/maison_flottante_20261006.png">maison_flottante_20261006.png</a><a href="../photos360/minecraft/monde_20261006/maison_flottante_20261006.png" download> [↓]</a></li>' +
-    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/minecraft/monde_20261006/maison_flottante_20261015.png">maison_flottante_20261015.png</a><a href="../photos360/minecraft/monde_20261006/maison_flottante_20261015.png" download> [↓]</a></li>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/minecraft/monde_20261006/maison_flottante_20261024.png">maison_flottante_20261024.png</a><a href="../photos360/minecraft/monde_20261006/maison_flottante_20261024.png" download> [↓]</a></li>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/minecraft/monde_20261006/maison_flottante_toit_20261017.png">maison_flottante_toit_20261017.png</a><a href="../photos360/minecraft/monde_20261006/maison_flottante_toit_20261017.png" download> [↓]</a></li>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/minecraft/monde_20261006/mine_20261010.png">mine_20261010.png</a><a href="../photos360/minecraft/monde_20261006/mine_20261010.png" download> [↓]</a></li>' +
