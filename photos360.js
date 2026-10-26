@@ -25,9 +25,7 @@ window.popupPhotos360HTML =
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/la_reunion/stjoseph_manapany_20230709_161124.jpg">stjoseph_manapany_20230709_161124.jpg</a><a href="../photos360/la_reunion/stjoseph_manapany_20230709_161124.jpg" download> [↓]</a></li>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/la_reunion/stphilippe_20250906_125201.jpg">stphilippe_20250906_125201.jpg</a><a href="../photos360/la_reunion/stphilippe_20250906_125201.jpg" download> [↓]</a></li>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/la_reunion/stphilippe_port_20221028_181030.jpg">stphilippe_port_20221028_181030.jpg</a><a href="../photos360/la_reunion/stphilippe_port_20221028_181030.jpg" download> [↓]</a></li>' +
-    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/la_reunion/strose_anse_des_cascades_20230323_161054.jpg">strose_anse_des_cascades_20230323_161054.jpg</a><a href="../photos360/la_reunion/strose_anse_des_cascades_20230323_161054.jpg" download> [↓]</a></li>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/la_reunion/strose_anse_des_cascades_20230323_163422.jpg">strose_anse_des_cascades_20230323_163422.jpg</a><a href="../photos360/la_reunion/strose_anse_des_cascades_20230323_163422.jpg" download> [↓]</a></li>' +
-    '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/la_reunion/strose_port_20230930_113820.jpg">strose_port_20230930_113820.jpg</a><a href="../photos360/la_reunion/strose_port_20230930_113820.jpg" download> [↓]</a></li>' +
     '<li class="photo360Fichier"><a class="photo360Nom" href="?file=../photos360/la_reunion/vincendo_container_20240817_135505.jpg">vincendo_container_20240817_135505.jpg</a><a href="../photos360/la_reunion/vincendo_container_20240817_135505.jpg" download> [↓]</a></li>' +
     '</ul>' +
     '</div>' +
